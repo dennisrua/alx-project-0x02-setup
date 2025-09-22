@@ -16,7 +16,7 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
     onSubmit({ title, content }); // Send data to parent
     setTitle('');
     setContent('');
-    onClose(); // Close modal after submission
+    onClose(); // Close modal to go back to home
   };
 
   return (
@@ -50,6 +50,14 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
             ></textarea>
           </div>
           <div className="flex justify-end space-x-2">
+            <button
+              type="button"
+              className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md hover:bg-gray-400"
+              onClick={onClose}
+            >
+              Close
+            </button>
+
             <button
               type="submit"
               className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
