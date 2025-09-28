@@ -1,3 +1,4 @@
+import Header from '@/components/layout/Header';
 import Card from '@/components/common/Card';
 import { useState } from 'react';
 import PostModal from '@/components/common/PostModal';
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
+      <Header />
       <div className="p-6">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Home Page</h1>

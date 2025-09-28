@@ -123,4 +123,4 @@ alx-project-0x02/
 - Proper routing between different pages
 - API integration to fetch and display data
 - Responsive design using Tailwind CSS
-- Clean, well-organized codebase.
+- Clean, well-organized codebase

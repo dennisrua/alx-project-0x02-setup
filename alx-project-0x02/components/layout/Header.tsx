@@ -4,11 +4,14 @@ const Header = () => {
   return (
     <header className="bg-gray-800 text-white p-4">
       <nav className="flex space-x-6">
-        <Link href="/home" className="hover:text-gray-300">
+        <Link href="/home" className="hover:text-gray-300 underline">
           Home
         </Link>
-        <Link href="/about" className="hover:text-gray-300">
+        <Link href="/about" className="hover:text-gray-300 underline">
           About
+        </Link>
+        <Link href="/posts" className="hover:text-gray-300 underline">
+          Posts
         </Link>
       </nav>
     </header>
